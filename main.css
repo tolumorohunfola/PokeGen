@@ -1,0 +1,14 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    color:blueviolet;
+    height: 1%;
+    padding:1% 2%;
+    position:relative;
+}
+
+p {
+    color: blue;
+}

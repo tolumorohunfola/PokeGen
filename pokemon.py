@@ -9,7 +9,7 @@ def home():  # this line defines each page's function - very useful
 
 @app.route('/random')
 def  randomPokemon():
-    return render_template('random_poke.html')
+    return render_template('random_pokemon.html')
 
 
 @app.route("/my-pokemon")

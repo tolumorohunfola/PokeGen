@@ -18,6 +18,7 @@ p {
     color: blue;
 }
 
-/* img {
-    justify-content: center; not working yet figure it out tolu;
-} */
+img #trainer{
+    justify-content: center;
+    /* not working yet figure it out tolu; */
+}

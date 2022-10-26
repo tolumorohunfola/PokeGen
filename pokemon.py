@@ -19,8 +19,13 @@ def my_pokemon():
 
 @app.route("/Poke-info")
 def poke_info():
-    name, sprite, weight, height = get_poke_info()
-    return render_template('PokemonInfoTemplate.html', img_url=sprite, name =name, weight=weight, height=height)
+    name0, sprite0, weight0, height0 = get_poke_info()
+    name1, sprite1, weight1, height1 = get_poke_info()
+    name2, sprite2, weight2, height2 = get_poke_info()
+    name3, sprite3, weight3, height3 = get_poke_info()
+    name4, sprite4, weight4, height4 = get_poke_info()
+    name5, sprite5, weight5, height5 = get_poke_info()
+    return render_template('PokemonInfoTemplate.html', img_url0=sprite0, name0 =name0, weight0=weight0, height0=height0, img_url1=sprite1, name1 =name1, weight1=weight1, height1=height1, img_url2=sprite2, name2 =name2, weight2=weight2, height2=height2, img_url3=sprite3, name3 =name3, weight3=weight3, height3=height3, img_url4=sprite4, name4 =name4, weight4=weight4, height4=height4, img_url5=sprite5, name5 =name5, weight5=weight5, height5=height5)
 
 
 if __name__ == "__main__":

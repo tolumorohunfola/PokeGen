@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Individual Pokemon Template</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+        
+    </head>
+    <body>
+        <img id='trainer' alt="image of trainer" src="https://www.clipartkey.com/mpngs/m/62-629841_pokemon-ash-png-image-ash-ketchum.png" width="100" height="200">
+        
+        <button accesskey="b">New Pokemon</button> <!-- we need to make sure this just refreshes the page probably-->
+        <table>
+            <tr>
+                <td><img  alt="image of pokemon" src="{{img_url}}" width="100" height="100"></td>
+                <td><img  alt="image of pokemon" src="{{img_url}}" width="100" height="100"></td>
+                <td><img  alt="image of pokemon" src="{{img_url}}" width="100" height="100"></td>
+                <td><img  alt="image of pokemon" src="{{img_url}}" width="100" height="100"></td>
+                <td><img  alt="image of pokemon" src="{{img_url}}" width="100" height="100"></td>
+                <td><img  alt="image of pokemon" src="{{img_url}}" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td><p>Name: {{name}}</p></td>
+                <td><p>Name: {{name}}</p></td>
+                <td><p>Name: {{name}}</p></td>
+                <td><p>Name: {{name}}</p></td>
+                <td><p>Name: {{name}}</p></td>
+                <td><p>Name: {{name}}</p></td>
+            </tr>
+            <tr>
+                <td><p>Weight: {{weight}}</p></td>
+                <td><p>Weight: {{weight}}</p></td>
+                <td><p>Weight: {{weight}}</p></td>
+                <td><p>Weight: {{weight}}</p></td>
+                <td><p>Weight: {{weight}}</p></td>
+                <td><p>Weight: {{weight}}</p></td>
+            </tr>
+
+            <tr>
+                <td><p>Height: {{height}}</p></td>
+                <td><p>Height: {{height}}</p></td>
+                <td><p>Height: {{height}}</p></td>
+                <td><p>Height: {{height}}</p></td>
+                <td><p>Height: {{height}}</p></td>
+                <td><p>Height: {{height}}</p></td>
+            </tr>
+            <tr>
+                <td><p>Nature: {{nature}}</p></td>
+                <td><p>Nature: {{nature}}</p></td>
+                <td><p>Nature: {{nature}}</p></td>
+                <td><p>Nature: {{nature}}</p></td>
+                <td><p>Nature: {{nature}}</p></td>
+                <td><p>Nature: {{nature}}</p></td>
+            </tr>
+            <tr>
+                <td><p>Type: {{type}}</p></td>
+                <td><p>Type: {{type}}</p></td>
+                <td><p>Type: {{type}}</p></td>
+                <td><p>Type: {{type}}</p></td>
+                <td><p>Type: {{type}}</p></td>
+                <td><p>Type: {{type}}</p></td>
+            </tr>
+
+
+        </table>
+    </body>
+    <script src="main.js"></script>
+</html>

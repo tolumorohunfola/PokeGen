@@ -9,6 +9,15 @@ h1 {
     position:relative;
 }
 
+h2 {
+    color: blue;
+    height: 1%;
+}
+
 p {
     color: blue;
 }
+
+/* img {
+    justify-content: center; not working yet figure it out tolu;
+} */

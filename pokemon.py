@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from information_about_pokemons import get_poke_info
 
 app = Flask(__name__)
 
@@ -15,6 +16,12 @@ def  randomPokemon():
 @app.route("/my-pokemon")
 def my_pokemon():
     return render_template('my_pokemon.html')
+
+@app.route("/Poke-info")
+def poke_info():
+    name, sprite, weight, height = get_poke_info()
+    return render_template('PokemonInfoTemplate.html', img_url=sprite, name =name, weight=weight, height=height)
+
 
 if __name__ == "__main__":
     app.run()

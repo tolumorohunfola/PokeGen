@@ -7,10 +7,16 @@
         
     </head>
     <body>
-        <h1>Pokemon Index</h1>
+        <h1>Random Pokemon Generator</h1>
         <p><time datetime></time></p>
+        <button accesskey="b" onclick="window.location.reload();">New Pokemon</button>
+        <p>Name: {{name}}</p>
+        <img alt="image of randomly generated pokemon" src="{{img_url}}" width="100" height="100">
         <h2>Statistics</h2>
-        <p></p>
+        <p>Weight: {{weight}}</p>
+        <p>Height: {{height}}</p>
+        <p>Nature: {{nature}}</p>
+        <p>Type: {{type}}</p>
     </body>
     <script src="main.js"></script>
 </html>

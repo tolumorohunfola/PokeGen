@@ -3,8 +3,8 @@ import pip._vendor.requests  #this allows us to import this module to make reque
 import requests
 import random
 from pprint import pprint #pprint means pretty print -very useful for apis :)
-def get_poke_info():
-    random_number = random.randint(0, 100)
+def get_poke_info(lower_limit, upper_limit):
+    random_number = random.randint(lower_limit, upper_limit)
     # print(random_number) I used this to check that the random number was correctly generated but no need anymore
     pokemon_page = "https://pokeapi.co/api/v2/pokemon/{}/".format(random_number)
     # print(pokemon_page) I used this to check that the formatting worked but no need anymore
